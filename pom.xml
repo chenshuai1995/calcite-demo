@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.jim.calcite</groupId>
+  <artifactId>calcite-demo</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <properties>
+    <!--<flink.version>1.13.6</flink.version>-->
+    <flink.version>1.14.0</flink.version>
+
+    <maven.compiler.source>8</maven.compiler.source>
+    <maven.compiler.target>8</maven.compiler.target>
+    <calcite-core.version>1.26.0</calcite-core.version>
+    <slf4j.version>1.7.25</slf4j.version>
+    <junit.version>4.13.1</junit.version>
+    <hydromatic.version>6.0</hydromatic.version>
+    <guava.version>19.0</guava.version>
+
+  </properties>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>org.apache.flink</groupId>
+      <artifactId>flink-table-planner_2.11</artifactId>
+      <version>${flink.version}</version>
+    </dependency>
+
+    <!--<dependency>-->
+      <!--<groupId>org.apache.flink</groupId>-->
+      <!--<artifactId>flink-table-planner-blink_2.11</artifactId>-->
+      <!--<version>${flink.version}</version>-->
+      <!--<exclusions>-->
+        <!--<exclusion>-->
+          <!--<artifactId>flink-table-api-scala-bridge_2.11</artifactId>-->
+          <!--<groupId>org.apache.flink</groupId>-->
+        <!--</exclusion>-->
+        <!--<exclusion>-->
+          <!--<artifactId>flink-table-api-scala_2.11</artifactId>-->
+          <!--<groupId>org.apache.flink</groupId>-->
+        <!--</exclusion>-->
+        <!--<exclusion>-->
+          <!--<artifactId>flink-table-runtime-blink_2.11</artifactId>-->
+          <!--<groupId>org.apache.flink</groupId>-->
+        <!--</exclusion>-->
+        <!--<exclusion>-->
+          <!--<artifactId>force-shading</artifactId>-->
+          <!--<groupId>org.apache.flink</groupId>-->
+        <!--</exclusion>-->
+      <!--</exclusions>-->
+    <!--</dependency>-->
+
+
+    <!--<dependency>-->
+      <!--<groupId>org.apache.calcite</groupId>-->
+      <!--<artifactId>calcite-core</artifactId>-->
+      <!--<version>${calcite-core.version}</version>-->
+      <!--&lt;!&ndash;<version>1.11.0</version>&ndash;&gt;-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+      <!--<groupId>junit</groupId>-->
+      <!--<artifactId>junit</artifactId>-->
+      <!--<version>${junit.version}</version>-->
+      <!--<scope>compile</scope>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+      <!--<groupId>org.slf4j</groupId>-->
+      <!--<artifactId>slf4j-api</artifactId>-->
+      <!--<version>${slf4j.version}</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+      <!--<groupId>org.slf4j</groupId>-->
+      <!--<artifactId>slf4j-log4j12</artifactId>-->
+      <!--<version>${slf4j.version}</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+      <!--<groupId>com.google.guava</groupId>-->
+      <!--<artifactId>guava</artifactId>-->
+      <!--<version>${guava.version}</version>-->
+    <!--</dependency>-->
+    <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.projectlombok/lombok &ndash;&gt;-->
+    <!--<dependency>-->
+      <!--<groupId>org.projectlombok</groupId>-->
+      <!--<artifactId>lombok</artifactId>-->
+      <!--<version>1.18.18</version>-->
+      <!--<scope>provided</scope>-->
+    <!--</dependency>-->
+    <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 &ndash;&gt;-->
+    <!--<dependency>-->
+      <!--<groupId>org.apache.commons</groupId>-->
+      <!--<artifactId>commons-lang3</artifactId>-->
+      <!--<version>3.12.0</version>-->
+    <!--</dependency>-->
+
+  </dependencies>
+
+</project>
